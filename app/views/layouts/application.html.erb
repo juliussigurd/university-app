@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>UnivApp</title>
+    <title>Tech University</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,10 @@
   </head>
 
   <body>
-    <%# <%= render 'layouts/navigation' %>
-    <%= yield %>
+    <%= render 'layouts/navigation' %>
+    <div class="container">
+      <%= yield %>
+    </div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>
