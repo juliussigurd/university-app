@@ -9,10 +9,16 @@
   </head>
 
   <body>
-    <%= render 'layouts/navigation' %>
-    <div class="container">
-      <%= yield %>
-    </div>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+    <footer>
+      <%= render 'layouts/footer' %>
+    </footer>
   </body>
 </html>
